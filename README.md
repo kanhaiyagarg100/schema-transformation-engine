@@ -127,3 +127,5 @@ mvn exec:java -Dexec.mainClass="com.schemaregistry.Main"
 
 ### Notes:
 I have included some basic tests in the Main function itself, ideally we would write them in a separate test file.
+
+Given my limited experience with GO and time constraints, I am choosing to implement this in JAVA otherwise I would prefer GO for this service.
