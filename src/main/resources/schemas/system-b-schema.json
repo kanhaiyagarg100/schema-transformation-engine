@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "properties": {
+    "fname": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lname": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email"
+    },
+    "join_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["fname", "lname", "contact_email"],
+  "additionalProperties": false
+}

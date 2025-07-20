@@ -1,0 +1,26 @@
+version: "1.0"
+description: "Transformation rules for System A to System B and vice versa"
+
+a_to_b:
+  - source_field: "first_name"
+    target_field: "fname"
+    transformation_function: "capitalize"
+  - source_field: "last_name"
+    target_field: "lname"
+    transformation_function: "uppercase"
+  - source_field: "email"
+    target_field: "contact_email"
+  - source_field: "created_at"
+    target_field: "join_date"
+
+b_to_a:
+  - source_field: "fname"
+    target_field: "first_name"
+    transformation_function: "lowercase"
+  - source_field: "lname"
+    target_field: "last_name"
+    transformation_function: "lowercase"
+  - source_field: "contact_email"
+    target_field: "email"
+  - source_field: "join_date"
+    target_field: "created_at"
